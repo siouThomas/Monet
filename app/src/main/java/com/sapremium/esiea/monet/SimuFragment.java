@@ -10,23 +10,21 @@ import android.view.ViewGroup;
 /**
  * Created by Thomas on 09/09/2016.
  */
-
-public class HomeFragment extends Fragment
-{
+public class SimuFragment extends Fragment {
 
     //private static final String test;
 
     private OnFragmentInteractionListener mListener;
 
 
-    public static HomeFragment newInstance() {
-        HomeFragment fragment = new HomeFragment();
+    public static SimuFragment newInstance() {
+        SimuFragment fragment = new SimuFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public HomeFragment() {
+    public SimuFragment() {
         // Required empty public constructor
     }
 
@@ -42,7 +40,7 @@ public class HomeFragment extends Fragment
                              Bundle savedInstanceState) {
 
         View view = inflater
-                .inflate(R.layout.home_fragment, container, false);
+                .inflate(R.layout.simu_fragment, container, false);
 
         //TODO VUE ACTION
 
@@ -78,5 +76,3 @@ public class HomeFragment extends Fragment
     }
 
 }
-
-
