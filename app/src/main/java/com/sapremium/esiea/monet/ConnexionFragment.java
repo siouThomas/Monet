@@ -20,8 +20,7 @@ public class ConnexionFragment extends Fragment
 
         public static ConnexionFragment newInstance() {
             ConnexionFragment fragment = new ConnexionFragment();
-            Bundle args = new Bundle();
-            fragment.setArguments(args);
+
             return fragment;
         }
 

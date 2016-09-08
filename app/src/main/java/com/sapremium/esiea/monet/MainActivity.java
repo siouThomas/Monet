@@ -8,7 +8,8 @@ import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ConnexionFragment fragConnexion;
+    private final ConnexionFragment fragConnexion = new ConnexionFragment();
+    private final HomeFragment fragHome = new HomeFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,8 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //---Fragments
-        fragConnexion = new ConnexionFragment();
-
         getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragConnexion).commit();
 
     }
