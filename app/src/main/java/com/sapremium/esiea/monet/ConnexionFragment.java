@@ -47,11 +47,6 @@ public class ConnexionFragment extends Fragment
             return view;
         }
 
-        public void onButtonPressed(String uri) {
-            if (mListener != null) {
-                mListener.onFragmentInteraction(uri);
-            }
-        }
 
         @Override
         public void onAttach(Activity activity) {
@@ -72,7 +67,6 @@ public class ConnexionFragment extends Fragment
 
         public interface OnFragmentInteractionListener {
             // TODO: Update argument type and name
-            public void onFragmentInteraction(String str);
         }
 
 }
