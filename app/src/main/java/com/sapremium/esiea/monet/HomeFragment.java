@@ -2,10 +2,12 @@ package com.sapremium.esiea.monet;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -14,8 +16,6 @@ import android.widget.TextView;
 
 public class HomeFragment extends Fragment
 {
-
-    //private static final String test;
 
     private OnFragmentInteractionListener mListener;
 
@@ -59,6 +59,15 @@ public class HomeFragment extends Fragment
         ((TextView) view.findViewById(R.id.corpsTxt)).setText(((MainActivity) getActivity()).users[0].getCorps());
         ((TextView) view.findViewById(R.id.gradeTxt)).setText(((MainActivity) getActivity()).users[0].getGrade());
         ((TextView) view.findViewById(R.id.echelonTxt)).setText(((MainActivity) getActivity()).users[0].getEchelon());
+
+        Button button = null ;//= (Button) view.findViewById(R.id.bSimulation);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ((MainActivity) getActivity()).fragSimu();
+            }
+        });
 
 
         return view;
