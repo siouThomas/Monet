@@ -59,20 +59,18 @@
             android:entries="@array/spinner_item2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/critere"
-            android:layout_toRightOf="@+id/bSimulationFinal"
-            android:layout_marginLeft="21dp" />
+            android:layout_marginLeft="31dp"
+            android:layout_above="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Simuler"
             android:id="@+id/bSimulationFinal"
-            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinner3"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/spinner2"
-            android:layout_marginTop="10dp"
-            />
+            android:layout_marginTop="15dp"/>
 
 
         <ImageView
@@ -83,6 +81,42 @@
             android:layout_below="@+id/bSimulationFinal"
             android:layout_marginTop="10dp"
             android:src="@drawable/courbe"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Concours"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/spinner1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:entries="@array/spinner_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Année :"
+            android:id="@+id/textView9"
+            android:layout_above="@+id/spinner3"
+            android:layout_alignStart="@+id/critere" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:layout_below="@+id/textView9"
+            android:layout_toEndOf="@+id/spinner3"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     </RelativeLayout>
 

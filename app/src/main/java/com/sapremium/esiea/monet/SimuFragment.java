@@ -45,6 +45,7 @@ public class SimuFragment extends Fragment {
 
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -85,6 +86,24 @@ public class SimuFragment extends Fragment {
 
             }
         });
+
+        Spinner sp3 = (Spinner) view.findViewById(R.id.spinner3);
+
+        sp3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> arg0, View arg1,
+                                       int arg2, long arg3) {
+                // TODO Auto-generated method stub
+
+
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // TODO Auto-generated method stub
+
+            }
+        });
+        //TODO VUE ACTION
         //TODO VUE ACTION
 
         /*
@@ -106,6 +125,7 @@ public class SimuFragment extends Fragment {
     public void onButtonPressed(String uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
+
         }
     }
 
