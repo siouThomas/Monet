@@ -2,6 +2,7 @@ package com.sapremium.esiea.monet;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,7 +18,8 @@ public class ConnexionFragment extends Fragment
 
         //private static final String test;
 
-
+        private User[] user;
+        private Corps[] corps;
 
         private OnFragmentInteractionListener mListener;
 
@@ -51,6 +53,7 @@ public class ConnexionFragment extends Fragment
                 @Override
                 public void onClick(View v)
                 {
+                    AsyncTask comDB = new ComDB(user, corps).execute();
                     ((MainActivity)getActivity()).fragHome();
                 }
             });
