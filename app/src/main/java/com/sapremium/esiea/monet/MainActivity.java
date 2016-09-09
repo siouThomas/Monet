@@ -1,5 +1,6 @@
 package com.sapremium.esiea.monet;
 
+import android.os.AsyncTask;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        AsyncTask comDB = new ComDB(users, corps).execute();
         //---Fragments
         getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragConnexion).commit();
 
@@ -37,14 +39,6 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
 
     public void fragHome()
     {
-        try
-        {
-            Thread.sleep(1000);
-        }
-        catch (Exception e)
-        {
-
-        }
 
         getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragHome).commit();
     }
