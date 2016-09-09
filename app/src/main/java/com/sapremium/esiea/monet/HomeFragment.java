@@ -60,7 +60,7 @@ public class HomeFragment extends Fragment
         ((TextView) view.findViewById(R.id.gradeTxt)).setText(((MainActivity) getActivity()).users[0].getGrade());
         ((TextView) view.findViewById(R.id.echelonTxt)).setText(((MainActivity) getActivity()).users[0].getEchelon());
 
-        Button button = null ;//= (Button) view.findViewById(R.id.bSimulation);
+        Button button = (Button) view.findViewById(R.id.bSimulation);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
