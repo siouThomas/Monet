@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by Thomas on 09/09/2016.
@@ -45,6 +47,10 @@ public class HomeFragment extends Fragment
                 .inflate(R.layout.home_fragment, container, false);
 
         //TODO VUE ACTION
+
+        ((TextView) view.findViewById(R.id.testLieb)).setText(((MainActivity) getActivity()).users[0].getNom());
+
+
 
         return view;
     }
