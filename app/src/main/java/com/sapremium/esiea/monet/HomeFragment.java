@@ -48,8 +48,10 @@ public class HomeFragment extends Fragment
         //TODO VUE ACTION
 
 
-        ((TextView) view.findViewById(R.id.testLieb)).setText(((MainActivity) getActivity()).users[0].getAdresse());
-
+        ((TextView) view.findViewById(R.id.prenomTxt)).setText(((MainActivity) getActivity()).users[0].getPrenom());
+        ((TextView) view.findViewById(R.id.nomTxt)).setText(((MainActivity) getActivity()).users[0].getNom());
+        ((TextView) view.findViewById(R.id.dtNaissTxt)).setText(((MainActivity) getActivity()).users[0].getDateNaissance());
+        ((TextView) view.findViewById(R.id.lieuTxt)).setText(((MainActivity) getActivity()).users[0].getLieuNaissance());
 
 
         return view;
