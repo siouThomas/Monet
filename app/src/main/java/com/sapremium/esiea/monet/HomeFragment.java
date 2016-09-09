@@ -52,6 +52,13 @@ public class HomeFragment extends Fragment
         ((TextView) view.findViewById(R.id.nomTxt)).setText(((MainActivity) getActivity()).users[0].getNom());
         ((TextView) view.findViewById(R.id.dtNaissTxt)).setText(((MainActivity) getActivity()).users[0].getDateNaissance());
         ((TextView) view.findViewById(R.id.lieuTxt)).setText(((MainActivity) getActivity()).users[0].getLieuNaissance());
+        ((TextView) view.findViewById(R.id.emailTxt)).setText(((MainActivity) getActivity()).users[0].getAdresse());
+        ((TextView) view.findViewById(R.id.statutTxt)).setText(((MainActivity) getActivity()).users[0].getStatut());
+        ((TextView) view.findViewById(R.id.permisTxt)).setText(((MainActivity) getActivity()).users[0].getPermis());
+        ((TextView) view.findViewById(R.id.niveauTxt)).setText(((MainActivity) getActivity()).users[0].getNiveauEtudes());
+        ((TextView) view.findViewById(R.id.corpsTxt)).setText(((MainActivity) getActivity()).users[0].getCorps());
+        ((TextView) view.findViewById(R.id.gradeTxt)).setText(((MainActivity) getActivity()).users[0].getGrade());
+        ((TextView) view.findViewById(R.id.echelonTxt)).setText(((MainActivity) getActivity()).users[0].getEchelon());
 
         Button button = (Button) view.findViewById(R.id.bSimulation);
         button.setOnClickListener(new View.OnClickListener() {
