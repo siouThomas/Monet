@@ -67,4 +67,9 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="278dp"
+        android:layout_height="278dp"
+        android:id="@+id/graphImage"
+        android:layout_gravity="center_horizontal|bottom" />
 </FrameLayout>

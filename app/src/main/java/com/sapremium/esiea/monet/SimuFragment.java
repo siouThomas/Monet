@@ -87,7 +87,6 @@ public class SimuFragment extends Fragment {
         });
         //TODO VUE ACTION
 
-
         /*
         ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.GONE);
 
@@ -133,3 +132,4 @@ public class SimuFragment extends Fragment {
     }
 
 }
+
