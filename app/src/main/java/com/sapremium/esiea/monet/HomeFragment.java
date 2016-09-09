@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -48,7 +47,8 @@ public class HomeFragment extends Fragment
 
         //TODO VUE ACTION
 
-        ((TextView) view.findViewById(R.id.testLieb)).setText(((MainActivity) getActivity()).users[0].getNom());
+
+        ((TextView) view.findViewById(R.id.testLieb)).setText(((MainActivity) getActivity()).users[0].getAdresse());
 
 
 

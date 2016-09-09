@@ -14,8 +14,8 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
     private final HomeFragment fragHome = new HomeFragment();
     private final ConnexionFragment fragConnexion = new ConnexionFragment();
 
-    public User[] users;
-    public Corps[] corps;
+    public final User[] users = new User[10];
+    public final Corps[] corps = new Corps[50];
 
 
     @Override
@@ -36,6 +36,16 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
 
     public void fragHome()
     {
+        try
+        {
+            Thread.sleep(1000);
+            //comDB.wait();
+        }
+        catch (Exception e)
+        {
+
+        }
+
         getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragHome).commit();
     }
 }

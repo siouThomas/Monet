@@ -109,7 +109,6 @@ public class ComDB extends AsyncTask<Void, Void, String> {
             }
 
 
-
         } catch (JSONException e) {
             e.printStackTrace();
         }

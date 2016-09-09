@@ -51,14 +51,6 @@ public class ConnexionFragment extends Fragment
                 public void onClick(View v)
                 {
                     AsyncTask comDB = new ComDB(((MainActivity)getActivity()).users, ((MainActivity)getActivity()).corps).execute();
-                    try
-                    {
-                        Thread.sleep(10000);
-                    }
-                    catch (Exception e)
-                    {
-
-                    }
 
                     ((MainActivity) getActivity()).fragHome();
                 }
