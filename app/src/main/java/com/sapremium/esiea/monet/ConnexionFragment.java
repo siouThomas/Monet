@@ -2,6 +2,7 @@ package com.sapremium.esiea.monet;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,10 +16,7 @@ import android.widget.Button;
 public class ConnexionFragment extends Fragment
 {
 
-        //private static final String test;
 
-        private User[] user;
-        private Corps[] corps;
 
         private OnFragmentInteractionListener mListener;
 
@@ -52,8 +50,17 @@ public class ConnexionFragment extends Fragment
                 @Override
                 public void onClick(View v)
                 {
-                    AsyncTask comDB = new ComDB(user, corps).execute();
-                    ((MainActivity)getActivity()).fragHome();
+                    AsyncTask comDB = new ComDB(((MainActivity)getActivity()).users, ((MainActivity)getActivity()).corps).execute();
+                    try
+                    {
+                        Thread.sleep(10000);
+                    }
+                    catch (Exception e)
+                    {
+
+                    }
+
+                    ((MainActivity) getActivity()).fragHome();
                 }
             });
 
