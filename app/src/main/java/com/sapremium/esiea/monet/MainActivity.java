@@ -6,10 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ConnexionFragment.OnFragmentInteractionListener,
+        HomeFragment.OnFragmentInteractionListener
+{
 
-    private final ConnexionFragment fragConnexion = new ConnexionFragment();
+
     private final HomeFragment fragHome = new HomeFragment();
+    private final ConnexionFragment fragConnexion = new ConnexionFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +23,15 @@ public class MainActivity extends AppCompatActivity {
         //---Fragments
         getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragConnexion).commit();
 
+    }
+
+    @Override
+    public void onFragmentInteraction(String str) {
+        // Do different stuff
+    }
+
+    public void fragHome()
+    {
+        getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragHome).commit();
     }
 }

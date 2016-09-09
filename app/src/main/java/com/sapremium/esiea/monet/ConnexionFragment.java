@@ -3,9 +3,11 @@ package com.sapremium.esiea.monet;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * Created by Thomas on 09/09/2016.
@@ -14,6 +16,8 @@ public class ConnexionFragment extends Fragment
 {
 
         //private static final String test;
+
+
 
         private OnFragmentInteractionListener mListener;
 
@@ -25,7 +29,6 @@ public class ConnexionFragment extends Fragment
         }
 
         public ConnexionFragment() {
-            // Required empty public constructor
         }
 
         @Override
@@ -42,7 +45,15 @@ public class ConnexionFragment extends Fragment
             View view = inflater
                     .inflate(R.layout.connexion_fragment, container, false);
 
-            //TODO VUE ACTION
+            Button button = (Button) view.findViewById(R.id.connection);
+            button.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    ((MainActivity)getActivity()).fragHome();
+                }
+            });
 
             return view;
         }
@@ -66,7 +77,7 @@ public class ConnexionFragment extends Fragment
         }
 
         public interface OnFragmentInteractionListener {
-            // TODO: Update argument type and name
+        // TODO: Update argument type and name
         }
 
 }
