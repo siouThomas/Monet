@@ -51,6 +51,7 @@ public class ConnexionFragment extends Fragment
                 @Override
                 public void onClick(View v)
                 {
+
                     ((MainActivity)getActivity()).fragHome();
                 }
             });

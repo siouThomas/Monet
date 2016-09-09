@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
     private final HomeFragment fragHome = new HomeFragment();
     private final ConnexionFragment fragConnexion = new ConnexionFragment();
 
+    //private User[] users;
+    //private Corps[] corps;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

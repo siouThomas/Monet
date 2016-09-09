@@ -46,6 +46,9 @@ public class HomeFragment extends Fragment
 
         //TODO VUE ACTION
 
+        //((MainActivity)getActivity());
+
+
         return view;
     }
 
