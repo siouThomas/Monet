@@ -17,7 +17,8 @@ public class ConnexionFragment extends Fragment
 
         //private static final String test;
 
-
+        private User[] user;
+        private Corps[] corps;
 
         private OnFragmentInteractionListener mListener;
 
@@ -51,7 +52,7 @@ public class ConnexionFragment extends Fragment
                 @Override
                 public void onClick(View v)
                 {
-
+                    AsyncTask comDB = new ComDB(user, corps).execute();
                     ((MainActivity)getActivity()).fragHome();
                 }
             });
