@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements ConnexionFragment.OnFragmentInteractionListener,
-        HomeFragment.OnFragmentInteractionListener
+        HomeFragment.OnFragmentInteractionListener, SimuFragment.OnFragmentInteractionListener
 {
 
 

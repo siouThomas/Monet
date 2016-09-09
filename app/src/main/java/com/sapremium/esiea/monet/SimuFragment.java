@@ -45,6 +45,7 @@ public class SimuFragment extends Fragment {
 
         //TODO VUE ACTION
 
+        /*
         ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.GONE);
 
         Button button =  (Button) view.findViewById(R.id.bSimulationRun);
@@ -55,7 +56,7 @@ public class SimuFragment extends Fragment {
                 ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.VISIBLE);
 
             }
-        });
+        });*/
 
         return view;
     }
