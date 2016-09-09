@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment
         ((TextView) view.findViewById(R.id.dtNaissTxt)).setText(((MainActivity) getActivity()).users[0].getDateNaissance());
         ((TextView) view.findViewById(R.id.lieuTxt)).setText(((MainActivity) getActivity()).users[0].getLieuNaissance());
 
-        Button button = null ;//= (Button) view.findViewById(R.id.bSimulation);
+        Button button = (Button) view.findViewById(R.id.bSimulation);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

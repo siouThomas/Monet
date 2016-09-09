@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * Created by Thomas on 09/09/2016.
@@ -32,7 +34,6 @@ public class SimuFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
     }
 
     @Override
@@ -43,6 +44,18 @@ public class SimuFragment extends Fragment {
                 .inflate(R.layout.simu_fragment, container, false);
 
         //TODO VUE ACTION
+
+        ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.GONE);
+
+        Button button =  (Button) view.findViewById(R.id.bSimulationRun);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.VISIBLE);
+
+            }
+        });
 
         return view;
     }
@@ -76,3 +89,4 @@ public class SimuFragment extends Fragment {
     }
 
 }
+
