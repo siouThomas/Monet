@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
 
     private final HomeFragment fragHome = new HomeFragment();
     private final ConnexionFragment fragConnexion = new ConnexionFragment();
+    private final SimuFragment fragSimu = new SimuFragment();
 
     public final User[] users = new User[10];
     public final Corps[] corps = new Corps[50];
@@ -46,5 +47,10 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
         }
 
         getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragHome).commit();
+    }
+
+    public void fragSimu()
+    {
+        getFragmentManager().beginTransaction().replace(R.id.fragment_content, fragSimu).commit();
     }
 }
