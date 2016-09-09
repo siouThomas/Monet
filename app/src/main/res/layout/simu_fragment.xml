@@ -49,10 +49,9 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Critère"
             android:id="@+id/critere"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="50dp"
-            android:layout_below="@+id/spinner1"/>
+            android:layout_alignTop="@+id/duree"
+            android:layout_toEndOf="@+id/bSimulationFinal"
+            android:layout_marginStart="44dp" />
 
 
         <Spinner
@@ -61,15 +60,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/critere"
+            android:layout_toRightOf="@+id/bSimulationFinal"
+            android:layout_marginLeft="21dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simuler"
+            android:id="@+id/bSimulationFinal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinner2"
+            android:layout_marginTop="10dp"
             />
 
 
+        <ImageView
+            android:layout_width="278dp"
+            android:layout_height="278dp"
+            android:id="@+id/graphImage"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_below="@+id/bSimulationFinal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/courbe"/>
 
     </RelativeLayout>
 
-    <ImageView
-        android:layout_width="278dp"
-        android:layout_height="278dp"
-        android:id="@+id/graphImage"
-        android:layout_gravity="center_horizontal|bottom" />
+
 </FrameLayout>
