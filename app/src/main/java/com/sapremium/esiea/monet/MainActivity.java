@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements ConnexionFragment
         try
         {
             Thread.sleep(1000);
-            //comDB.wait();
         }
         catch (Exception e)
         {

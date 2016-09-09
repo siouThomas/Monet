@@ -15,8 +15,6 @@ import android.widget.TextView;
 public class HomeFragment extends Fragment
 {
 
-    //private static final String test;
-
     private OnFragmentInteractionListener mListener;
 
 
