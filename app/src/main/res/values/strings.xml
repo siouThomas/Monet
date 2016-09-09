@@ -5,10 +5,18 @@
     <string name="title_activity_main">MainActivity</string>
 
     <string-array name = "spinner_item">
-        <item>Item 1</item>
-        <item>Item 2</item>
-        <item>Item 3</item>
-        <item>Item 4</item>
-        <item>Item 5</item>
+        <item>5 ans</item>
+        <item>10 ans</item>
+        <item>15 ans</item>
+        <item>20 ans</item>
+        <item>30 ans</item>
+    </string-array>
+
+    <string-array name = "spinner_item2">
+        <item>Salaire</item>
+        <item>Corps</item>
+        <item>Grade</item>
+        <item>Echelon</item>
+        <item>Points</item>
     </string-array>
 </resources>
