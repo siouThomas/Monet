@@ -45,18 +45,7 @@ public class SimuFragment extends Fragment {
 
         //TODO VUE ACTION
 
-        /*
-        ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.GONE);
 
-        Button button =  (Button) view.findViewById(R.id.bSimulationRun);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.VISIBLE);
-
-            }
-        });*/
 
         return view;
     }
