@@ -14,6 +14,8 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import android.widget.Button;
+import android.widget.ImageView;
 
 /**
  * Created by Thomas on 09/09/2016.
@@ -67,6 +69,18 @@ public class SimuFragment extends Fragment {
             }
         });
         //TODO VUE ACTION
+
+        ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.GONE);
+
+        Button button =  (Button) view.findViewById(R.id.bSimulationRun);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                ((ImageView) view.findViewById(R.id.graph)).setVisibility(View.VISIBLE);
+
+            }
+        });
 
         return view;
     }
